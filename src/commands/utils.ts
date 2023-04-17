@@ -1,9 +1,9 @@
 import { Lucid, Network, Blockfrost } from "lucid-cardano";
 
 export async function getLucid(): Promise<Lucid> {
-  const BLOCKFROST_URL = requiredEnv("BLOCKFROST_URL");
-  const BLOCKFROST_PROJECT_ID = requiredEnv("BLOCKFROST_PROJECT_ID");
-  const NETWORK = requiredEnv("NETWORK") as Network;
+  const BLOCKFROST_URL = "https://cardano-preview.blockfrost.io/api/v0";
+  const BLOCKFROST_PROJECT_ID = "previewoas2M2UFx9NWGGeSGWGbtUF0fM786gLF";
+  const NETWORK = "Preview" as Network;
   const TEST_SEED_PHRASE_URL = process.env["TEST_SEED_PHRASE_URL"];
 
   const blockfrostProvider = new Blockfrost(

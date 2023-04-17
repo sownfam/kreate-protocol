@@ -5,6 +5,7 @@ import getKolourNft from "@/contracts/kolours/kolour.nft/main";
 import { alwaysFalse, deployReferencedScript, printScriptHash } from "./utils";
 
 const lucid = await getLucid();
+
 const kolourPkh = requiredEnv("KOLOUR_NFT_PUB_KEY_HASH");
 const kreationPkh = requiredEnv("KREATION_NFT_PUB_KEY_HASH");
 
